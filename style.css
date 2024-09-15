@@ -314,45 +314,6 @@ section {
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
-
-#experience {
-  position: relative;
-}
-
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
-}
-
-article {
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
-}
-
-article .icon {
-  cursor: default;
-}
-
 /* PROJECTS SECTION */
 
 #projects {
@@ -429,4 +390,219 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* EDUCATION SECTION */
+
+#education {
+  position: relative;
+  padding-top: 4vh;
+  height: auto;
+  margin: 0 10rem;
+  box-sizing: border-box;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.education-item {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+}
+
+.education-item:hover {
+  background: rgb(250, 250, 250);
+  transition: background 0.3s ease;
+}
+
+.education-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.education-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.education-degree {
+  font-size: 1.25rem;
+  color: rgb(85, 85, 85);
+}
+
+.education-time {
+  text-align: right;
+  font-size: 1.25rem;
+  color: rgb(120, 120, 120);
+}
+
+/* Hoverable link style */
+.education-title a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.education-title a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: rgb(163, 163, 163);
+}
+
+/* EDUCATION SECTION TITLE */
+#education .title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Section Container */
+#experience-skills {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 5rem 10rem; */
+  align-items: flex-start;
+}
+
+#experience,
+#skills {
+  width: 48%;
+}
+
+/* Experience Section */
+.main-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.experience-item {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.experience-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.experience-company a {
+  color: #0077b5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.experience-company a:hover {
+  text-decoration: underline;
+}
+
+.experience-time {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.experience-description {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+}
+
+/* Skills & Tools Section */
+.sub-title {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.skill-category {
+  margin-bottom: 2rem;
+}
+
+.small-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.skill-icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.skill-icons img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.skill-icons img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 1200px) {
+  #experience-skills {
+    flex-direction: column;
+    margin: 3rem 5rem;
+  }
+
+  #experience,
+  #skills {
+    width: 100%;
+  }
+
+  .main-title,
+  .sub-title {
+    text-align: center;
+  }
+
+  .skill-icons {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #experience-skills {
+    margin: 2rem 2rem;
+  }
+
+  .skill-icons img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .experience-title,
+  .small-title {
+    font-size: 1.4rem;
+  }
+
+  .experience-description {
+    font-size: 1rem;
+  }
 }

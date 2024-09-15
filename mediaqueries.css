@@ -101,3 +101,198 @@
     text-align: justify;
   }
 }
+
+/* FOR SCREENS MAX WIDTH 1400px */
+@media screen and (max-width: 1400px) {
+  #education {
+    margin: 0 8rem;
+  }
+  .education-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .education-time {
+    text-align: left;
+    margin-top: 0.5rem;
+  }
+}
+
+/* FOR SCREENS MAX WIDTH 1200px */
+@media screen and (max-width: 1200px) {
+  #education {
+    margin: 0 5rem;
+  }
+  .education-title {
+    font-size: 1.5rem;
+  }
+  .education-degree {
+    font-size: 1.1rem;
+  }
+  .education-time {
+    font-size: 1.1rem;
+  }
+}
+
+/* FOR SCREENS MAX WIDTH 600px */
+@media screen and (max-width: 600px) {
+  #education {
+    margin: 0 2rem;
+  }
+  .education-item {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .education-title {
+    font-size: 1.25rem;
+  }
+  .education-degree {
+    font-size: 1rem;
+  }
+  .education-time {
+    font-size: 1rem;
+  }
+  .title,
+  .subheading {
+    font-size: 1.75rem;
+  }
+}
+
+/* Default Styles for Large Screens (above 1400px) */
+#experience-skills {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 10rem;
+  align-items: flex-start;
+}
+
+#experience,
+#skills {
+  width: 48%;
+}
+
+/* Media Queries for Smaller Screens */
+
+/* For Screens up to 1200px */
+@media screen and (max-width: 1200px) {
+  #experience-skills {
+    flex-direction: column;
+    margin: 3rem 5rem;
+  }
+
+  #experience,
+  #skills {
+    width: 100%;
+  }
+
+  .main-title,
+  .sub-title {
+    text-align: center;
+  }
+
+  .skill-icons {
+    justify-content: center;
+  }
+
+  .experience-item {
+    padding: 1.5rem;
+  }
+
+  .experience-title,
+  .small-title {
+    font-size: 1.6rem;
+  }
+
+  .experience-description {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+
+  .skill-icons img {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+/* For Screens up to 900px */
+@media screen and (max-width: 900px) {
+  #experience-skills {
+    /* margin: 2.5rem 3rem; */
+  }
+
+  .experience-item {
+    padding: 1.25rem;
+  }
+
+  .experience-title,
+  .small-title {
+    font-size: 1.5rem;
+  }
+
+  .experience-description {
+    font-size: 1rem;
+  }
+
+  .skill-icons img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* For Screens up to 600px */
+@media screen and (max-width: 600px) {
+  #experience-skills {
+    margin: 2rem 2rem;
+  }
+
+  .main-title,
+  .sub-title {
+    font-size: 2rem;
+  }
+
+  .experience-title,
+  .small-title {
+    font-size: 1.4rem;
+  }
+
+  .experience-description {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+  }
+
+  .skill-icons img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* For Screens up to 480px */
+@media screen and (max-width: 480px) {
+  #experience-skills {
+    margin: 1.5rem 1.5rem;
+  }
+
+  .main-title,
+  .sub-title {
+    font-size: 1.8rem;
+  }
+
+  .experience-title,
+  .small-title {
+    font-size: 1.3rem;
+  }
+
+  .experience-description {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .skill-icons img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skill-icons {
+    justify-content: center;
+    gap: 1rem;
+  }
+}
