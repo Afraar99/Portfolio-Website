@@ -1,7 +1,7 @@
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
+    height: 80vh; /* Slightly reduced */
+    margin-bottom: 4rem; /* Reduced from 6rem */
   }
   .about-containers {
     flex-wrap: wrap;
@@ -9,6 +9,11 @@
   #contact,
   #projects {
     height: fit-content;
+  }
+  section,
+  #education,
+  #achievements {
+    margin: 0 5rem;
   }
 }
 
@@ -36,69 +41,144 @@
   }
   section {
     margin: 0 5%;
+    padding: 3rem 0; /* Reduced padding */
   }
   .section__pic-container {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
   }
+  .section__pic-container::after {
+    width: 275px;
+    height: 275px;
+  }
   .about-containers {
     margin-top: 0;
   }
 }
 
+@media screen and (max-width: 900px) {
+  #education {
+    margin: 0 2rem;
+  }
+  #experience-skills {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  #experience,
+  #skills {
+    width: 100%;
+  }
+  .skills-container {
+    align-items: center;
+  }
+  .skill-category {
+    text-align: center;
+  }
+  .small-title {
+    text-align: center;
+  }
+  .small-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 @media screen and (max-width: 600px) {
+  #about,
+  #profile {
+    padding: 1.5rem 1rem; /* Reduced padding */
+  }
+
   #contact,
   footer {
-    /* height: 40vh; */
+    padding: 1.5rem 1rem; /* Reduced padding */
   }
+
   #profile {
-    height: 65vh;
-    margin-bottom: 0;
+    height: auto;
+    margin-bottom: 2rem;
   }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
   article {
     font-size: 1rem;
   }
+
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;
   }
+
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
   }
-  .contact-info-container {
-    margin: 0;
+
+  .btn {
+    padding: 0.8rem 1.5rem;
   }
+
+  .contact-info-container {
+    margin: 0.5rem 0;
+    width: 100%;
+  }
+
   .contact-info-container p,
   .nav-links li a {
     font-size: 1rem;
   }
+
   .experience-sub-title {
     font-size: 1.25rem;
   }
+
   .logo {
     font-size: 1.5rem;
   }
+
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
+
   .section__pic-container {
-    width: auto;
-    height: 46vw;
+    width: 200px;
+    height: 200px;
     justify-content: center;
   }
-  .section__text__p2 {
-    font-size: 1.25rem;
+
+  .section__pic-container::after {
+    width: 200px;
+    height: 200px;
   }
-  .title {
-    font-size: 2rem;
-  }
+
   .text-container {
     text-align: justify;
+    padding: 0 0.5rem;
+  }
+
+  .achievements-title,
+  .main-title {
+    font-size: 1.75rem;
+  }
+
+  .skill-icons img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .achievement-box {
+    max-width: 90%;
   }
 }
 
@@ -273,13 +353,14 @@
 
   .main-title,
   .sub-title {
-    font-size: 1.8rem;
-    margin-top: 2rem;
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .experience-title,
   .small-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .experience-description {
@@ -288,12 +369,36 @@
   }
 
   .skill-icons img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
   }
 
   .skill-icons {
     justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-info-upper-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .contact-info-container {
+    padding: 0.5rem;
+  }
+
+  .nav-links-footer {
     gap: 1rem;
+  }
+
+  .btn-container {
+    gap: 0.5rem;
+  }
+
+  #achievements {
+    padding: 2.5rem 0; /* Reduced from 4rem */
   }
 }
