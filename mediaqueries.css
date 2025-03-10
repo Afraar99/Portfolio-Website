@@ -15,6 +15,9 @@
   #achievements {
     margin: 0 5rem;
   }
+  #about {
+    margin-bottom: 3rem; /* Added responsive margin for smaller screens */
+  }
   #achievements {
     padding: 3.5rem 0;
     margin: 2rem 5%;
@@ -200,6 +203,10 @@
   .achievement-box {
     max-width: 90%;
   }
+
+  #about {
+    margin-bottom: 2rem; /* Smaller margin for mobile screens */
+  }
 }
 
 /* FOR SCREENS MAX WIDTH 1400px */
@@ -221,6 +228,7 @@
 @media screen and (max-width: 1200px) {
   #education {
     margin: 0 5rem;
+    padding: 2rem;
   }
   .education-title {
     font-size: 1.5rem;
@@ -231,16 +239,51 @@
   .education-time {
     font-size: 1.1rem;
   }
+  .committee-items {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* FOR SCREENS MAX WIDTH 900px */
+@media screen and (max-width: 900px) {
+  #education {
+    margin: 0 3rem;
+    padding: 1.5rem;
+  }
+  .education-item {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+  }
+  .education-left {
+    margin-bottom: 1.5rem;
+  }
+  .education-details {
+    width: 100%;
+    text-align: center;
+  }
+  .committees-container {
+    text-align: center;
+  }
+  .committee-items {
+    justify-content: center;
+  }
+  .committee-item {
+    text-align: center;
+  }
 }
 
 /* FOR SCREENS MAX WIDTH 600px */
 @media screen and (max-width: 600px) {
   #education {
     margin: 0 2rem;
+    padding: 1.5rem 1rem;
   }
   .education-item {
-    padding: 1rem;
+    padding: 1.2rem;
     border-radius: 1rem;
+    border-left-width: 3px;
   }
   .education-title {
     font-size: 1.25rem;
@@ -250,6 +293,25 @@
   }
   .education-time {
     font-size: 1rem;
+  }
+  .education-image {
+    width: 100px;
+    height: 100px;
+  }
+  .education-description {
+    font-size: 0.95rem;
+  }
+  .committees-title {
+    font-size: 1.1rem;
+  }
+  .committee-name {
+    font-size: 1rem;
+  }
+  .committee-role {
+    font-size: 0.85rem;
+  }
+  .committee-description {
+    font-size: 0.9rem;
   }
   .title,
   .subheading {
