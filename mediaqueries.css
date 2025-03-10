@@ -32,6 +32,9 @@
   .section-container {
     display: block;
   }
+  .section-container {
+    margin-top: 2rem; /* Add top margin for container */
+  }
   .arrow {
     display: none;
   }
@@ -164,7 +167,7 @@
 
   .text-container {
     text-align: justify;
-    padding: 0 0.5rem;
+    padding: 1rem 0.5rem; /* Keep padding even on small screens */
   }
 
   .achievements-title,
