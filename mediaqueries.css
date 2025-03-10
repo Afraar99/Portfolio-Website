@@ -5,6 +5,7 @@
   }
   .about-containers {
     flex-wrap: wrap;
+    justify-content: center;
   }
   #contact,
   #projects {
@@ -21,6 +22,15 @@
   #achievements {
     padding: 3.5rem 0;
     margin: 2rem 5%;
+  }
+  .details-container.color-container {
+    width: calc(50% - 2rem);
+    max-width: 400px;
+  }
+  .color-container {
+    width: calc(50% - 2rem);
+    min-width: 280px;
+    max-width: 400px;
   }
 }
 
@@ -101,6 +111,15 @@
 
   .achievement-box {
     max-width: 320px;
+  }
+
+  .details-container.color-container {
+    width: calc(100% - 2rem);
+    max-width: 450px;
+  }
+  .color-container {
+    width: calc(100% - 2rem);
+    max-width: 450px;
   }
 }
 
@@ -203,6 +222,101 @@
 
   #about {
     margin-bottom: 2rem; /* Smaller margin for mobile screens */
+  }
+
+  .tech-tag {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.7rem;
+    margin: 0.15rem;
+    white-space: nowrap;
+    min-width: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .tech-stack {
+    gap: 0.35rem;
+    margin: 0 0.75rem 0.6rem;
+    flex-wrap: wrap;
+    padding: 0.25rem;
+    justify-content: center;
+    width: auto;
+  }
+
+  .color-container {
+    height: auto;
+    min-height: 420px;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .article-container {
+    height: 170px;
+    margin-bottom: 0;
+  }
+
+  .project-img {
+    height: 150px;
+  }
+
+  .project-title {
+    height: auto;
+    min-height: auto;
+    font-size: 1.2rem;
+    margin: 0.4rem 0.75rem;
+    padding: 0 0.5rem;
+  }
+
+  .btn-container {
+    margin-top: auto;
+    padding: 0.5rem;
+  }
+
+  .btn-container .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  /* This ensures proper spacing between tech tags and buttons */
+  .tech-stack {
+    margin-bottom: 0.75rem;
+  }
+}
+
+/* Added for very small mobile devices */
+@media screen and (max-width: 375px) {
+  .tech-tag {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.65rem;
+    min-width: auto;
+    margin: 0.15rem;
+  }
+
+  .tech-stack {
+    gap: 0.2rem;
+    padding: 0.15rem;
+    margin: 0 0.5rem 0.5rem;
+  }
+
+  .btn-container .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .color-container {
+    min-height: 400px;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+    margin: 0.3rem 0.5rem;
+    line-height: 1.3;
+  }
+
+  .article-container {
+    height: 160px;
   }
 }
 

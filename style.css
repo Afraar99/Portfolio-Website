@@ -618,16 +618,38 @@ section + section {
   position: relative;
 }
 
+.about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
 .color-container {
   border: none;
   background: var(--white);
   box-shadow: var(--card-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(25% - 2rem);
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 480px; /* Changed from fixed height to min-height */
 }
 
 .color-container:hover {
   transform: translateY(-10px);
   box-shadow: var(--hover-shadow);
+}
+
+.article-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  overflow: hidden;
+  margin-top: 1rem;
 }
 
 .project-img {
@@ -638,14 +660,149 @@ section + section {
 }
 
 .project-title {
-  margin: 1rem;
+  margin: 0.75rem 1rem; /* Reduced vertical margin */
   color: var(--text-dark);
   font-size: 1.5rem;
+  text-align: center;
+  min-height: 50px; /* Changed from fixed height to min-height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.project-btn {
-  color: var(--text-dark);
-  border: 2px solid var(--primary-color);
+/* Technology Stack Tags */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* Added to ensure vertical alignment */
+  gap: 0.5rem;
+  margin: 0 1rem 1rem;
+  padding: 0.5rem;
+  flex: 0 1 auto; /* Changed from flex: 1 to prevent stretching */
+}
+
+.tech-tag {
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 0.25rem;
+  display: inline-block;
+  min-width: fit-content;
+  text-align: center;
+}
+
+/* Different colors for tech tags */
+.tech-tag:nth-child(1) {
+  background: linear-gradient(90deg, #3a86ff, #0066cc);
+}
+
+.tech-tag:nth-child(2) {
+  background: linear-gradient(90deg, #8338ec, #5e00e6);
+}
+
+.tech-tag:nth-child(3) {
+  background: linear-gradient(90deg, #ff006e, #e6005c);
+}
+
+.tech-tag:nth-child(4) {
+  background: linear-gradient(90deg, #fb5607, #e64a00);
+}
+
+.tech-tag:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Make sure tech tags look good on all screen sizes */
+@media screen and (max-width: 600px) {
+  .tech-stack {
+    gap: 0.35rem;
+    margin-bottom: 0.75rem;
+    padding: 0.25rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .tech-tag {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    min-width: auto;
+    max-width: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: visible;
+    margin: 0.15rem;
+  }
+
+  .color-container {
+    height: auto;
+    min-height: 420px; /* Reduced min-height for mobile */
+    padding-bottom: 0.75rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-title {
+    min-height: auto; /* Allow title to take natural height */
+    font-size: 1.2rem;
+    margin: 0.5rem 1rem;
+    height: auto;
+    padding: 0.25rem 0;
+  }
+
+  /* Project buttons container with auto margin-top to push to bottom */
+  .btn-container {
+    margin-top: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .tech-tag {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.65rem;
+    min-width: auto;
+    margin: 0.15rem;
+  }
+
+  .tech-stack {
+    gap: 0.25rem;
+    padding: 0.15rem;
+    margin: 0 0.5rem 0.75rem;
+  }
+
+  .color-container {
+    min-height: 400px;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+    margin: 0.4rem 0.5rem;
+  }
+
+  .tech-stack {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Project buttons container */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.75rem; /* Reduced padding */
+  margin-top: auto; /* Push buttons to bottom */
 }
 
 /* CONTACT */
@@ -1044,7 +1201,7 @@ footer {
   font-size: 2rem;
   margin-bottom: 2rem;
   font-weight: 600;
-  color: var(--primary-color);
+  color: var (--primary-color);
 }
 
 .skills-container {
