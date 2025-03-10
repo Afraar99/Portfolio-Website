@@ -15,6 +15,10 @@
   #achievements {
     margin: 0 5rem;
   }
+  #achievements {
+    padding: 3.5rem 0;
+    margin: 2rem 5%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -84,6 +88,19 @@
   .small-title::after {
     left: 50%;
     transform: translateX(-50%);
+  }
+  #achievements {
+    padding: 3rem 0;
+    margin: 1.5rem 3%;
+  }
+
+  .achievements-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .achievement-box {
+    max-width: 320px;
   }
 }
 
@@ -399,6 +416,24 @@
 
   .btn-container {
     gap: 0.5rem;
+  }
+
+  #achievements {
+    padding: 2.5rem 0;
+    margin: 1rem 2%;
+  }
+
+  .achievements-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .achievement-image img {
+    height: 140px;
+  }
+
+  .achievement-content h3 {
+    font-size: 1rem;
   }
 
   #achievements {

@@ -894,15 +894,15 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  max-width: 1200px;
+  gap: 1.5rem;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 /* Individual Achievement Box */
 .achievement-box {
   width: 100%;
-  max-width: 350px;
+  max-width: 280px;
   background-color: #fff;
   box-shadow: var(--card-shadow);
   border-radius: var(--border-radius);
@@ -952,6 +952,44 @@ footer {
 }
 
 /* Responsive Design */
+@media screen and (max-width: 1400px) {
+  .achievements-container {
+    gap: 1.5rem;
+    justify-content: space-around;
+  }
+
+  .achievement-box {
+    width: calc(25% - 1.5rem);
+    min-width: 250px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .achievement-box {
+    width: calc(33.33% - 1.5rem);
+    min-width: 220px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .achievement-box {
+    width: calc(50% - 1.5rem);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .achievements-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .achievement-box {
+    width: 90%;
+    max-width: 350px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .achievements-container {
     gap: 1.5rem;
