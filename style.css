@@ -277,6 +277,33 @@ section + section {
   font-size: 1.75rem;
   margin-bottom: 1rem;
   color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  min-height: 2em; /* Keep a consistent height to avoid layout shifts */
+}
+
+.typing-text {
+  display: inline-block;
+  border-right: none;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background-color: var(--secondary-color);
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .title {
