@@ -42,9 +42,6 @@
   .section-container {
     margin-top: 2rem; /* Add top margin for container */
   }
-  .arrow {
-    display: none;
-  }
   section,
   .section-container {
     height: fit-content;

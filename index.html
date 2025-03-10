@@ -7,6 +7,8 @@
     <title>Mohamed Afraar</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- Add particles.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   </head>
   <body>
     <nav id="desktop-nav">
@@ -37,6 +39,7 @@
       </div>
     </nav>
     <section id="profile">
+      <div id="particles-js"></div>
       <div class="section__pic-container">
         <img
           src="./assets/profile-pic.png"
@@ -44,13 +47,21 @@
         />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Mohamed Afraar</h1>
-        <p class="section__text__p2">
+        <p class="section__text__p1 hidden fadeInUp">Hello, I'm</p>
+        <h1 class="title hidden fadeInUp" style="animation-delay: 0.2s">
+          Mohamed Afraar
+        </h1>
+        <p
+          class="section__text__p2 hidden fadeInUp"
+          style="animation-delay: 0.4s"
+        >
           <span class="typing-text">Full Stack Developer</span>
           <span class="cursor">|</span>
         </p>
-        <div class="btn-container">
+        <div
+          class="btn-container hidden fadeInUp"
+          style="animation-delay: 0.6s"
+        >
           <button
             class="btn btn-color-2"
             onclick="window.open('./assets/resume.pdf')"
@@ -61,17 +72,21 @@
             Contact Info
           </button>
         </div>
-        <div id="socials-container">
+        <div
+          id="socials-container"
+          class="hidden fadeInUp"
+          style="animation-delay: 0.8s"
+        >
           <img
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
-            class="icon"
+            class="icon socials-icon"
             onclick="location.href='https://www.linkedin.com/in/mohamed-afraar/'"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
-            class="icon"
+            class="icon socials-icon"
             onclick="location.href='https://github.com/Afraar99'"
           />
         </div>
@@ -90,32 +105,6 @@
           />
         </div>
         <div class="about-details-container">
-          <!-- <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>
-                Software Engineer Intern at SLT Digital Labs <br />2+ years of
-                experience in full-stack development
-              </p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>
-                B.Sc.(Hons) in Computing and Information System (R)<br />Sabaragamuwa
-                University of Sri Lanka
-              </p>
-            </div>
-          </div> -->
           <div class="text-container">
             <p>
               I’m Mohamed Afraar, a final-year Computing & Information Systems
@@ -140,12 +129,6 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
     <!-- Education -->
     <section id="education">
@@ -430,12 +413,6 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
 
     <!-- ACHIEVEMENTS & VOLUNTEER EXPERIENCE BOXES -->
