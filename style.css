@@ -212,6 +212,7 @@ section + section {
 
 .section-container {
   display: flex;
+  gap: 4rem; /* Add gap between section container elements */
 }
 
 /* PROFILE SECTION */
@@ -398,6 +399,10 @@ section + section {
 
 .about-pic:hover {
   transform: scale(1.03);
+}
+
+.text-container {
+  padding: 1rem 0; /* Add padding to the text container */
 }
 
 .arrow {
