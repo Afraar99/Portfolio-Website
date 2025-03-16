@@ -1,8 +1,17 @@
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
+  const menuItems = document.querySelectorAll(".menu-links li");
+
   menu.classList.toggle("open");
   icon.classList.toggle("open");
+
+  // Add delay for each menu item animation
+  if (menu.classList.contains("open")) {
+    menuItems.forEach((item, index) => {
+      item.style.setProperty("--i", index);
+    });
+  }
 }
 
 // Text animation for the profile section
