@@ -190,38 +190,47 @@ a {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.95); /* More transparent background */
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Improved animation */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   margin-top: 10px;
 }
 
 .menu-links a {
   display: block;
-  padding: 12px 20px;
+  padding: 12px 24px;
   text-align: center;
   font-size: 1.3rem;
   color: var(--text-dark);
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .menu-links a:hover {
-  background-color: rgba(58, 134, 255, 0.1);
+  background-color: rgba(58, 134, 255, 0.15);
   color: var(--primary-color);
   transform: translateX(5px);
 }
 
 .menu-links li {
   list-style: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  transition-delay: calc(0.1s * var(--i, 0));
+}
+
+.menu-links.open li {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .menu-links li:last-child a {
@@ -230,7 +239,7 @@ a {
 
 .menu-links.open {
   max-height: 300px;
-  padding: 8px 0;
+  padding: 10px 0;
 }
 
 .hamburger-icon.open span:first-child {
