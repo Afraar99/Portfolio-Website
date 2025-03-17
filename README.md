@@ -4,7 +4,7 @@
 
 ## Overview
 
-This is my personal portfolio website showcasing my skills, projects, education, and experience as a Computing & Information Systems undergraduate and aspiring full-stack developer. The website features a clean, responsive design with interactive elements and animations.
+This is my personal portfolio website showcasing my skills, projects, education, and experience as a Computing & Information Systems undergraduate and aspiring full-stack developer. This website features a clean, responsive design with interactive elements and animations.
 
 ## Features
 
